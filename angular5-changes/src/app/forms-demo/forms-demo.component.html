@@ -1,0 +1,51 @@
+<h1>Angular Colombia</h1>
+
+<section>
+
+  <form #formularioDeAlgo="ngForm" (ngSubmit)="enviar(formularioDeAlgo)">
+    <div>
+      <label for="ombligos">Ombligos</label>
+      
+      <input
+      type="number"
+      id="ombligos"
+      placeholder="ombligos"
+      required
+      [(ngModel)]="ombligos"
+      name="ombligos"
+      >
+      <div>>> Tienes {{ombligos}} ombligos</div>
+    </div>
+    
+    <div>
+      <label for="pelos">Pelos</label>
+      <input
+      type="number"
+      id="pelos"
+      placeholder="pelos"
+      required
+      [(ngModel)]="pelos"
+      name="pelos"
+      [ngModelOptions]="{updateOn: 'blur'}"
+      >
+      <div>>> Tienes {{pelos}} pelos</div>
+    </div>
+    
+    <div>
+      <label for="cabezas">Cabezas</label>
+      <input
+      type="text"
+      [(ngModel)]="cabezas"
+      name="cabezas"
+      >
+      <div>>> Tienes {{cabezas}} cabezas</div>
+    </div>
+    
+  </form>
+
+</section>
+
+
+<section>
+  
+</section>
